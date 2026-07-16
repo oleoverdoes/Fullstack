@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h3>Authentication Form</h3>
+        <form action="#" method="post">
+        <label for="txtUsername">Username:</label>
+        <input type="text" id ="txtUsername" name="txtUsername" placeholder="ชื่อผู้ใช้" <br><br><br>
+        <label for="txtPassword">Password:</label>
+        <input type="password" id = "txtPassword" name="txtPassword" placeholder="รหัสผ่าน" >
+        <input type="submit" value="login"> <input type="reset" value="Cancel">
+        </form>
+    <h3>Input Type Examples</h3>
+        <form action="#" method="post">
+        <label for="txtName">Name:</label>
+        <input type="text" id="txtName" name="txtName" placeholder="ชื่อ-นามสกุล" required><br><br>
+        <label for="txtPassword">Password:</label>
+        <input type="password" id="txtPassword" name="txtPassword" placeholder="รหัสผ่าน" required><br><br>
+        <label for="txtEmail">Email:</label>
+        <input type="email" id="txtEmail" name="txtEmail" placeholder="อีเมลล์" required><br><br>
+        <label for="txtTel">Tel:</label>
+        <input type="tel" id="txtTel" name="txtTel" placeholder="เบอร์โทรศัพท์" required><br><br>
+        <label for="txtDate">Date:</label>
+        <label for="txtColor">Color:</label>
+        <input type="color" id="txtColor" name="txtColor" required><br><br>
+        <input type="hidden" id="txtHidden" name="txtHidden" value="Hidden Value"><br><br>
+        <label for="txtmeal">Meal:</label>
+        <input type="checkbox" id="txtmeal" name="txtmeal" value="Breakfast" required> Breakfast
+        <input type="checkbox" id="txtmeal" name="txtmeal" value="Lunch" required> Lunch
+        <input type="checkbox" id="txtmeal" name="txtmeal" value="Dinner" required> Dinner<br><br>
+        <label for="Rdomeal">Meal:</label>
+        <input type="radio" id="Rdomeal" name="Rdomeal" value="Breakfast" required> Breakfast
+        <input type="radio" id="Rdomeal" name="Rdomeal" value="Lunch" required> Lunch
+        <input type="radio" id="Rdomeal" name="Rdomeal" value="Dinner" required> Dinner<br><br>
+        <select name="SelMeal" id="SelMeal" required>
+            <option value="">Select Meal</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+        </select><br><br>
+        <label for = "txtFile">File:</label>
+        <input type="file" id="txtFile" name="txtFile" required><br><br>
+        <label for="txtTextarea">Message:</label><br>
+        <textarea id="txtTextarea" name="txtTextarea" rows="6" cols="50" placeholder="ข้อความ" required></textarea><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+        </form>
+        
+</body>
+</html>
