@@ -1,0 +1,68 @@
+body {
+    background-color: #f0f4f8;
+    color: #1f2937;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #2563eb;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box; 
+}
+
+#about {
+    color: red;
+}
+/*======BUG Specificity =======
+ หัวข้อ "About Me" แสดงเป็นสีแดง ทั้งที่ตั้งใจให้เป็นสีเทาเข้ม
+Fix: ลบ rule #about ด้านล่างนี้ออก
+    เพื่อให้ .card h2 กลับมาควบคุมสีตามเดิม
+Devtools : DevTools > Elements > เลือก h2 #about > แท็บ Styles > เห็น rule .card h2 { color: #111827 } ถูกขีดฆ่าแสดงว่าไม่ถูกใช้งาน
+===============================*/
+.card h2 {
+    color: #111827;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #374151;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
